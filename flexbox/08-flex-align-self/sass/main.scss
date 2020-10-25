@@ -1,0 +1,32 @@
+.container {
+    width: 90%;
+    height: 95vh;
+    margin: 10px auto;
+    border: 2px solid blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div[class*="item"] {
+    // width: 100px;
+    // height: 100px;
+    border: 1px solid gray;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 2em;
+}
+
+.item:nth-child(2n - 1) { // impares
+    background: lightblue;
+}
+
+.item:nth-child(2n) { // pares
+    background: lightcoral;
+
+    // align-self alinea cada elemento de forma individual sobre el cross axis
+    align-self: flex-end;
+    align-self: flex-start;
+    align-self: stretch; // Por defecto. Comentar tamaños para probar
+}

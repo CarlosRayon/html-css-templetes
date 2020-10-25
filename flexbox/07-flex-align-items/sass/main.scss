@@ -1,0 +1,37 @@
+.container {
+    display: flex;
+    width: 90%;
+    height: 100vmin;
+    border: 2px solid gray;
+    margin: 0 auto;
+    justify-content: flex-start;
+    flex-direction: row;
+
+    // Controla el cross axis \\
+    align-items: stretch; // Por defecto. Quitar tamaños item para probar
+
+    align-items: flex-start;
+    align-items: flex-end;
+    align-items: baseline; // Alinea linea base
+    align-items: center;
+  
+ 
+
+}
+
+div[class*="item-"] {
+    // width: 200px;
+    // height: 200px;
+    border: 2px solid black;
+    text-align: center;
+    font-size: 2em;
+}
+
+div[class*="item-"]:nth-child(odd) {
+    background: lightblue;
+    // height: 50px; // para probar baseline
+}
+
+div[class*="item-"]:nth-child(even) {
+    background: lightcoral;
+}

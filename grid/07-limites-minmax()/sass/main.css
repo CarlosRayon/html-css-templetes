@@ -1,0 +1,23 @@
+main {
+  height: 97vh;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 10px;
+  -ms-grid-columns: (minmax(30px, 150px))[8];
+      grid-template-columns: repeat(8, minmax(30px, 150px));
+}
+
+div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: lightcoral;
+  color: white;
+}
+/*# sourceMappingURL=main.css.map */

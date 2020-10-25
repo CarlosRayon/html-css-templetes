@@ -1,0 +1,99 @@
+main {
+  display: -ms-grid;
+  display: grid;
+  height: 97vh;
+  grid-gap: 10px;
+  -ms-grid-columns: (minmax(30px, auto))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(30px, auto));
+}
+
+div {
+  background-color: goldenrod;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+div:nth-child(1) {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  background: #d19e1f;
+}
+
+div:nth-child(2) {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  background: #c8981d;
+}
+
+div:nth-child(3) {
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+  background: #bf911c;
+}
+
+div:nth-child(4) {
+  -webkit-box-ordinal-group: 5;
+      -ms-flex-order: 4;
+          order: 4;
+  background: #b68a1b;
+}
+
+div:nth-child(5) {
+  -webkit-box-ordinal-group: 6;
+      -ms-flex-order: 5;
+          order: 5;
+  background: #ae8319;
+}
+
+div:nth-child(6) {
+  -webkit-box-ordinal-group: 7;
+      -ms-flex-order: 6;
+          order: 6;
+  background: #a57d18;
+}
+
+div:nth-child(7) {
+  -webkit-box-ordinal-group: 8;
+      -ms-flex-order: 7;
+          order: 7;
+  background: #9c7617;
+}
+
+div:nth-child(8) {
+  -webkit-box-ordinal-group: 9;
+      -ms-flex-order: 8;
+          order: 8;
+  background: #936f16;
+}
+
+div:nth-child(9) {
+  -webkit-box-ordinal-group: 10;
+      -ms-flex-order: 9;
+          order: 9;
+  background: #8a6814;
+}
+
+div:nth-child(10) {
+  -webkit-box-ordinal-group: 11;
+      -ms-flex-order: 10;
+          order: 10;
+  background: #816213;
+}
+
+div:nth-child(7) {
+  background: purple;
+  -webkit-box-ordinal-group: 7;
+      -ms-flex-order: 6;
+          order: 6;
+}
+/*# sourceMappingURL=main.css.map */

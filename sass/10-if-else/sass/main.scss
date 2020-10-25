@@ -1,0 +1,55 @@
+// Variables \
+$alto: 200px;
+$ancho: 15%;
+
+// Mixin con condicional if-else \
+
+@mixin condicional($color) {
+	background-color: $color;
+
+	@if $color == red {
+		border: 3px solid black;
+	} @else if $color == blue {
+		border: 20px solid red;
+	} @else {
+		border: 10px dashed green;
+	}
+}
+
+// Placeholder con condicional if-else \
+%button {
+	border-radius: 5px;
+	display: inline-block;
+	height: $alto;
+	width: $ancho;
+
+	@if $alto == 200px {
+		margin: 10px;
+	} @else {
+		clear: both;
+	}
+}
+
+.caja-1 {
+	@extend %button;
+
+	@include condicional(red);
+}
+
+.caja-2 {
+	@extend %button;
+
+	@include condicional(blue);
+}
+
+.caja-3 {
+	@extend %button;
+
+	background-color: green;
+}
+
+.caja-4 {
+	@extend %button;
+
+	@include condicional(yellow);
+}

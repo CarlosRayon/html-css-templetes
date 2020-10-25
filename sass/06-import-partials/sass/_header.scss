@@ -1,0 +1,9 @@
+// ----------------------------- \
+// Con el _ indicamos que es un archivo partials, es decir no creara un archivo css de este archivo scss \
+// Posteriormente este archivo le importamos en el main del scss para poder usar su contenido \ 
+// ----------------------------- \
+
+header{
+    height: 200px;
+    background: $colorDos;
+}

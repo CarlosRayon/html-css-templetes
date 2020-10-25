@@ -1,0 +1,35 @@
+.container {
+  width: 90%;
+  height: 95vh;
+  margin: 10px auto;
+  border: 2px solid blue;
+  display: flex;
+  flex-direction: row;
+}
+
+div[class*="item"] {
+  border: 1px solid gray;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 2em;
+}
+
+.item:nth-child(2n - 1) {
+  background: lightblue;
+  flex-grow: 0;
+  flex-grow: 2;
+}
+
+.item:nth-child(2n) {
+  background: lightcoral;
+  flex-grow: 1;
+}
+
+.item:nth-child(4) {
+  background: green;
+  color: white;
+  letter-spacing: 5px;
+  flex-grow: 3;
+}
+
+/*# sourceMappingURL=main.css.map */

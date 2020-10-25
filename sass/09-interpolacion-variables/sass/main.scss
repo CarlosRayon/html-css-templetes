@@ -1,0 +1,30 @@
+// ----------------------------- \
+// Interpolacción de variables \
+// ----------------------------- \
+
+$color: color;
+$fsize: font-size;
+$tamañoAncho: width;
+$tamañoAlto: height;
+
+@mixin tamaño($ancho, $alto) {
+	#{$tamañoAncho}: $ancho;
+	#{$tamañoAlto}: $alto;
+	margin: 10px auto;
+}
+
+$selector: '.caja-2';
+
+.caja {
+	#{$fsize}: 22px;
+	#{$color}: red;
+
+	@include tamaño(600px, 200px);
+}
+
+#{$selector} {
+	#{$fsize}: 22px;
+	#{$color}: red;
+
+	@include tamaño(600px, 200px);
+}

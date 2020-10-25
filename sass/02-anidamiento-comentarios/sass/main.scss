@@ -1,0 +1,55 @@
+body {
+    background-color: rgb(222, 222, 231);
+}
+
+header {
+    width: 80%;
+    margin: 10px auto;
+    background: rgb(175, 175, 255);
+
+  // ----------------------------- \
+  // Anidamos dentro de otro elemento directamente \
+  // ----------------------------- \
+    h1 {
+        color: white;
+        text-align: center;
+    }
+
+    h2 {
+        color: white;
+        text-align: center;
+    }
+}
+
+section {
+    color: white;
+    width: 80%;
+    margin: 10px auto;
+    background: rgb(175, 175, 255);
+
+    p {
+        font-size: 1.2em;
+        padding: 10px;
+    }
+
+    ul {
+        width: 80%;
+        margin: 10px auto;
+        padding: 15px;
+
+      // ----------------------------- \
+      // Anidamos dentro de otro anidamiento \
+      // ----------------------------- \
+        li {
+            list-style: none;
+
+            // ----------------------------- \
+            //  & hace referencia al propio elemento \
+            // ----------------------------- \
+            &:hover {
+                text-decoration: underline;
+                font-size: 1.5em;
+            }
+        }
+    }
+}

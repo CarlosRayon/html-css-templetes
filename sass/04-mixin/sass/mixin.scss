@@ -1,0 +1,47 @@
+// Variables para usar \
+$pequeño: 30%;
+$mediano: 60%;
+$grande: 90%;
+$full: 100%;
+
+// Mixin \
+
+// ----------------------------- \
+// Los mixin pueden tener o no parámetros \
+// Se puede definir un valor por defecto al los parámetros también \ 
+// ----------------------------- \
+@mixin cuadrado($fondo, $ancho: 200px) {
+    background: $fondo;
+    margin: 20px auto;
+    width: $ancho;
+    height: 200px;
+    margin-top: 5px;
+    padding: 10px;
+}
+
+@mixin shadow($x, $y, $blur, $color) {
+    -webkit-box-shadow: $x $y $blur $color;
+    -moz-box-shadow: $x $y $blur $color;
+    box-shadow: $x $y $blur $color;
+}
+
+.cuadrado-1 {
+    // Inclumos el mixin con @include \
+    @include cuadrado(#989D33, 300px);
+}
+
+.cuadrado-2 {
+    // El segundo parametro sera el valor por defecto definido en el mixin \
+    @include cuadrado(#FFCC66);
+
+    // Añadimos mas propiedades aparte de las del mixin \
+    font-size: 1.3em;
+}
+
+.cuadrado-3 {
+    // Podemos pasar variables también \
+    @include cuadrado(#0995FF, $grande);
+
+    // Podemos incluir los mixin que queramos \
+    @include shadow(5px, 5px, 5px, rgba(0, 0, 0, 6));
+}

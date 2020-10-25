@@ -1,0 +1,50 @@
+%tamaños {
+	margin: 10px auto;
+	width: 200px;
+	height: 200px;
+	font-size: 24px;
+}
+
+// ----------------------------- \
+// Podemos hacer operaciones con los valores de los colores \
+//También podemos usar mas opciones como las funciones siguientes. Mira la documentación oficial: https://sass-lang.com/documentation/Sass/Script/Functions.html#darken-instance_method \
+// ----------------------------- \
+$colorUno: #991122;
+$colorDos: #234;
+
+$colorBase: hsl(152, 100%, 30%);
+
+.class-uno {
+	@extend %tamaños;
+
+	background-color: $colorUno + $colorDos;
+
+	color: $colorBase;
+}
+.class-dos {
+	@extend %tamaños;
+
+	background-color: $colorUno - $colorDos;
+
+	color: lighten($colorBase, 10%);
+}
+.class-tres {
+	@extend %tamaños;
+
+	background-color: $colorUno * $colorDos;
+
+	color: darken($colorBase, 10%);
+}
+.class-cuatro {
+	@extend %tamaños;
+
+	background-color: $colorUno / $colorDos;
+
+	color: invert($colorBase);
+}
+
+.class-cinco {
+	@extend %tamaños;
+
+	background-color: complement($colorUno);
+}

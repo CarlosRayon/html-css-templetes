@@ -1,0 +1,21 @@
+main {
+  height: 97vh;
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: [start] repeat(4, [col-lg-start] minmax(80px, 1fr) [col-lg-end col-md-start] minmax(40px, 1fr) [col-md-end col-sm-start] minmax(20px, 1fr)) [end];
+}
+
+div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lightcoral;
+  color: white;
+}
+
+div:nth-child(1) {
+  background-color: purple;
+  grid-column: col-lg-start /col-md-end;
+}
+
+/*# sourceMappingURL=main.css.map */

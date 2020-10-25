@@ -1,0 +1,27 @@
+/* ------------------------------------ */
+/* Uso de Mixin */
+/* ------------------------------------ */
+.container {
+  font-size: 16px;
+  color: black;
+}
+@media (max-width: 480px) {
+  .container {
+    font-size: 22px;
+    color: red;
+  }
+}
+@media (min-width: 480px) and (max-width: 720px) {
+  .container {
+    font-size: 18px;
+    color: green;
+  }
+}
+@media (mix-width: 1020px) {
+  .container {
+    font-size: 20px;
+    color: yellow;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

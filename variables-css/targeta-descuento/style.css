@@ -1,0 +1,87 @@
+:root{
+    --main-color: blue;
+    --font-size: 1em;
+    --border-color: #ccc;
+    --text-color: #444;
+    --before-text: '';
+}
+
+[class*=button]{
+    display: inline-block;
+    padding: 1em 2em;
+    text-decoration: none;
+    border: none;
+    margin: 1em;
+    color: #fff;
+    border-radius: .25rem;
+
+    background-color: var(--main-color);
+    font-size: var(--font-size);
+
+}
+
+.button--red{
+    --main-color: red;
+}
+
+.button--cta{
+    --main-color: orange;
+}
+.button--small{
+    --font-size: .75em
+
+}
+.button--big{
+    --font-size: 1.25em
+
+}
+
+img{
+    max-width: 100%;
+    margin: 0 auto;
+    
+}
+.courses{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 1em;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: var(--font-size);
+
+    padding: .5em;
+    background: #fff;
+    border: 1px solid var(--border-color);
+
+
+}
+
+.card--discount::after{
+    content: var(--before-text);
+    background: yellow;
+    position: absolute;
+    transform: rotate(-45deg);
+    top: 80;
+    left: 0;
+}
+.card h2{
+    margin: .5em 0 0;
+    font-size: .75em;
+    color: var(--text-color);
+}
+.card--discount{
+    position: relative;
+    --border-color: red;
+    --before-text: 'Con Descuento';
+    --font-size: 2em;
+
+ 
+}
+.card--discount h2{
+ --text-color: red;
+
+}

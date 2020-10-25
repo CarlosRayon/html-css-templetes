@@ -1,0 +1,29 @@
+@import "varios";
+
+.contenedor {
+    display: flex;
+    flex-direction: row; //Por defecto
+    // flex-direction: row-reverse;
+
+    // flex-direction: column;
+    // flex-direction: column-reverse;
+
+    //Media que hace que el elemento tome el  tamaño visible de la pantalla
+    height: 100vh;
+    border: 20px solid #4A86E8;
+
+    // Todos los elemento que empiezan por clase item-
+    div[class*="item-"] {
+        flex: 1;//Cada elemento ocupe lo máximo posible \
+        background: orange;
+        padding: 10px;
+        text-align: center;
+        border: 2px solid grey;
+    }
+
+    // Todos los elemento que empiezan por clase item- que sean impares \
+    div[class*="item-"]:nth-child(odd) {
+        background: black;
+        color: white;
+    }
+}

@@ -1,0 +1,40 @@
+section {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 10px;
+  margin: 20px 0;
+  background: lightgreen;
+}
+
+div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  padding: 50px;
+  text-align: center;
+}
+
+.auto-fill div {
+  background: lightcoral;
+}
+
+.auto-fit div {
+  background-color: purple;
+  color: white;
+}
+
+.auto-fill {
+  -ms-grid-columns: (minmax(100px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+}
+
+.auto-fit {
+  -ms-grid-columns: (minmax(100px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+/*# sourceMappingURL=main.css.map */

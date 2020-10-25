@@ -1,0 +1,41 @@
+:root{
+    --red: 0;
+    --green: 0;
+    --blue: 0;
+}
+
+body{
+    display: grid;
+    min-height: 100vh;
+    align-content: center;
+    justify-content: center;
+    background: rgb(var(--red), var(--green), var(--blue))
+}
+
+img{
+    width: 100vh
+}
+label{
+    display: flex;
+    width: 55vw;
+    margin-bottom: 1rem;
+    background: #fff;
+    border: 1px solid #000;
+    border-radius: .5rem;
+    padding: 1rem;
+    font-weight: bold;
+}
+label:nth-of-type(1){
+    color: red;
+}
+label:nth-of-type(2){
+    color: green;
+}
+label:nth-of-type(3){
+    color: blue;
+}
+input{
+    margin-left: auto;
+    display: block;
+    width: 40vw;
+}

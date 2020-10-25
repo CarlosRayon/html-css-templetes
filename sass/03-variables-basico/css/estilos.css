@@ -1,0 +1,23 @@
+section {
+  margin: 10px auto;
+  width: 90%;
+  background: #f5b47f;
+}
+section h1 {
+  background: #81a0c9;
+  text-align: center;
+}
+section h2 {
+  background: white;
+}
+section p {
+  background: #6b8fbd;
+}
+
+footer {
+  margin: 10px auto;
+  width: 50%;
+  background: #f5b47f;
+}
+
+/*# sourceMappingURL=estilos.css.map */

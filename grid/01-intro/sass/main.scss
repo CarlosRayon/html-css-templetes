@@ -1,0 +1,56 @@
+html{
+    box-sizing: border-box;
+}
+
+main > *{
+   background-color: lightgreen;
+   padding: 10px;
+   font-size: 3em; 
+   text-align: center;
+}
+// Definimos el contenedor como GRID \
+main{
+    display: grid;
+    grid-gap: 10px;
+
+    // Definimos la posición de los elementos (areas)
+    // Si cambio los elementos cambia su order
+    grid-template-areas: 
+    "header"
+    "izquierda"
+    "contenido"
+    "derecha"
+    "footer";
+
+// Jugar con las posición de elementos para probar
+    @media (min-width: 500px) {
+        grid-template-areas:
+        "izquierda header header"
+        "izquierda contenido derecha"
+        "izquierda contenido footer "
+    }
+
+}
+
+// Nombramos los elementos \
+
+header{
+    grid-area: header;
+}
+
+aside:first-of-type{
+    grid-area: izquierda;
+    height: 95vh;
+}
+
+article{
+    grid-area: contenido
+}
+
+aside:last-of-type{
+    grid-area: derecha;
+}
+
+footer{
+    grid-area: footer;
+}

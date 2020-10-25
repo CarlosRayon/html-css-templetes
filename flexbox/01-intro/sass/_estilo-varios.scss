@@ -1,0 +1,13 @@
+// mixin \
+@mixin estiloCaja($color, $ancho, $alto) {
+    background-color: $color;
+    width: $ancho;
+    min-height: $alto;
+}
+
+// Placeholder \
+
+%ancho-total{
+    width: 100%;
+    height: 100%;
+}

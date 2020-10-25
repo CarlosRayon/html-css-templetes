@@ -1,0 +1,42 @@
+
+// Mirar con la opción de Firefox de ver las mallas
+main {
+    display: grid;
+    grid-gap: 10px;
+    grid-template: repeat(4, 50px) / repeat(3, 1fr);
+
+    // Similar al justify-content de flexbox
+    justify-items: start;
+    justify-items: end;
+    justify-items: center;
+    justify-items: stretch; // Por defecto
+
+    //Similar a align-item de flexbox
+    align-items: start;
+    align-items: end;
+    align-items: center;
+    align-items: stretch;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: goldenrod;
+}
+
+div:nth-child(5) {
+    background: purple;
+   // Alineamos eje principal
+    justify-self: stretch;
+    justify-self: center;
+    justify-self: end;
+    justify-self: start;
+
+// Alineamos eje secundario
+
+align-self: stretch;
+align-self: start;
+align-self: end;
+align-self: center;
+}

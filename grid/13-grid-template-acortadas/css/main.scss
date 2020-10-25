@@ -1,0 +1,59 @@
+main {
+    height: 97vh;
+    display: grid;
+    grid-gap: 10px;
+
+    /*
+        grid-template-areas: 
+        "header header header"
+        "izquierda contenido derecha1"
+        "izquierda contenido derecha2"
+        "izquierda footer footer";
+    
+        grid-template-rows: 
+        [row-header-start] 1fr [ row-header-end row-contenido-start] 2fr 1fr  1fr [row-footer-end];
+    
+        grid-template-columns: 
+        [col-aside-left-start] 1fr [col-aside-left-end col-contenido-start] 2fr 1fr [col-aside-right-end];
+    */
+
+    // FORMA ABREVIADA DE GRID TEMPLATE
+    grid-template: [row-header-start] "header header header" 1fr
+     [row-header-end row-contenido-start] "izquierda contenido derecha1" 2fr
+      "izquierda contenido derecha2" 1fr
+       "izquierda footer footer" 1fr (([row-footer-end])
+     /
+      ([col-aside-left-start])) 1fr [col-aside-left-end col-contenido-start] 2fr 1fr [col-aside-right-end];
+}
+
+main > * {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: goldenrod;
+}
+
+// Definimos las areas
+header {
+    grid-area: header;
+}
+
+aside:first-of-type {
+    grid-area: izquierda;
+}
+
+article {
+    grid-area: contenido;
+}
+
+aside:nth-of-type(2) {
+    grid-area: derecha1;
+}
+
+aside:last-of-type {
+    grid-area: derecha2;
+}
+
+footer {
+    grid-area: footer;
+}

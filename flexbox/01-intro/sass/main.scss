@@ -1,0 +1,60 @@
+@import "estilo-varios";
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+html {
+    @extend %ancho-total;
+
+    // Hace que el borde y padding no incremente el tamaño de la caja
+    box-sizing: border-box;
+}
+
+body {
+    @extend %ancho-total;
+
+    // Uso Flex Box \
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 500px;
+    background-color: lightgray;
+    padding: 20px;
+    font-family: sans-serif;
+    text-align: center;
+
+    h1 {
+        flex-basis: 100%;
+    }
+
+    .contenido {
+        flex-grow: 1;
+
+        @include estiloCaja(white, 70%, 500px);
+
+        border: 1px solid gray;
+
+        // float: left;
+   
+    }
+
+    .lateral {
+        flex-grow: 0.5;
+
+        @include estiloCaja(darkgrey, auto, 500px);
+
+        // float: right;
+        margin-left: 10px;
+    }
+}
+
+// .clearfix{
+//     clear: both;
+// }

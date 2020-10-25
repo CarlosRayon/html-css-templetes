@@ -1,0 +1,28 @@
+.caja-1, .caja-2, .caja-3, .caja-4 {
+  border-radius: 5px;
+  display: inline-block;
+  height: 200px;
+  width: 15%;
+  margin: 10px;
+}
+
+.caja-1 {
+  background-color: red;
+  border: 3px solid black;
+}
+
+.caja-2 {
+  background-color: blue;
+  border: 20px solid red;
+}
+
+.caja-3 {
+  background-color: green;
+}
+
+.caja-4 {
+  background-color: yellow;
+  border: 10px dashed green;
+}
+
+/*# sourceMappingURL=main.css.map */

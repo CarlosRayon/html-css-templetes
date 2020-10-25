@@ -1,0 +1,30 @@
+main {
+  display: grid;
+  height: 97vh;
+  grid-column-gap: 10px;
+  grid-row-gap: 15px;
+  grid-gap: 15px 10px;
+  grid-template-columns: 150px 1fr 1fr;
+  grid-template-rows: 1fr 2fr 1fr;
+}
+@media (max-width: 500px) {
+  main {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5, 1fr);
+  }
+}
+@media (max-width: 300px) {
+  main {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(9, 1fr);
+  }
+}
+
+main > * {
+  background: lightblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*# sourceMappingURL=main.css.map */

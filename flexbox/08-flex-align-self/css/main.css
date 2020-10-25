@@ -1,0 +1,30 @@
+.container {
+  width: 90%;
+  height: 95vh;
+  margin: 10px auto;
+  border: 2px solid blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+div[class*="item"] {
+  border: 1px solid gray;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 2em;
+}
+
+.item:nth-child(2n - 1) {
+  background: lightblue;
+}
+
+.item:nth-child(2n) {
+  background: lightcoral;
+  align-self: flex-end;
+  align-self: flex-start;
+  align-self: stretch;
+}
+
+/*# sourceMappingURL=main.css.map */

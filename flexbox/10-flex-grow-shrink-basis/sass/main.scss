@@ -1,0 +1,49 @@
+.container {
+    width: 90%;
+    height: 95vh;
+    margin: 10px auto;
+    border: 2px solid blue;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+div[class*="item"] {
+    // width: 100px;
+    // height: 100px;
+    border: 1px solid gray;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 2em;
+}
+
+.item:nth-child(1) { // impares
+    background: lightblue;
+
+    // Define el ancho de forma individual del elemento (respecto al main axis)
+    flex-basis: 300px;
+
+    // flex: grow shrink basis \
+
+    flex: 0 0 300px;
+}
+
+.item:nth-child(2) { // pares
+    background: lightcoral;
+    flex-basis: 300px;
+
+    //flex-shrink Seria como grow pero al revés. Define el espacio que puede disminuir el elemento ( "Sacrifica su espacio") cuando no hay espacio suficiente
+    flex-shrink: 5;
+
+
+    flex: 0 5 300px;
+}
+
+.item:nth-child(3) { // pares
+    background: green;
+    color: white;
+    flex-basis: 300px;
+
+    flex: 0 0 300px;
+}

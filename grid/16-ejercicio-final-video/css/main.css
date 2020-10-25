@@ -1,0 +1,134 @@
+html * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: white;
+}
+
+.principal {
+  height: 97vh;
+}
+
+@media (min-width: 600px) {
+  .principal {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 2fr 1fr;
+        grid-template-columns: 1fr 2fr 1fr;
+    -ms-grid-rows: 1fr 3fr 3fr 1fr;
+        grid-template-rows: 1fr 3fr 3fr 1fr;
+  }
+}
+
+@media (min-width: 900px) {
+  .principal {
+    -ms-grid-columns: 1fr 3fr 3fr 1fr;
+        grid-template-columns: 1fr 3fr 3fr 1fr;
+  }
+}
+
+.principal > * {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+}
+
+.cabezera {
+  background: aquamarine;
+}
+
+@media (min-width: 600px) {
+  .cabezera {
+    grid-column: span 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-column: 1 / 4;
+    grid-column: 1 / -1;
+  }
+}
+
+.contenido {
+  background: aliceblue;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (min-width: 600px) {
+  .contenido {
+    grid-column: span 2;
+  }
+}
+
+.img {
+  width: 100%;
+  height: auto;
+}
+
+.anexo1 {
+  background: #B5821A;
+}
+
+.anexo2 {
+  background: #036A6D;
+}
+
+.izquierda {
+  background: #F6F2D9;
+}
+
+@media (min-width: 900px) {
+  .izquierda {
+    grid-row: span 2;
+  }
+}
+
+.derecha {
+  background: #F6F2D9;
+}
+
+@media (min-width: 600px) {
+  .derecha {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3 / 4;
+  }
+}
+
+@media (min-width: 900px) {
+  .derecha {
+    -ms-grid-column: 4;
+    grid-column: 4;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 2;
+    grid-row: 2 / 4;
+  }
+}
+
+.pie {
+  color: white;
+  background: black;
+}
+
+@media (min-width: 600px) {
+  .pie {
+    grid-column: 1 / -1;
+  }
+}
+/*# sourceMappingURL=main.css.map */

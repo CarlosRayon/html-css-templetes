@@ -1,0 +1,98 @@
+
+:root{
+    --bg-color: #eee;
+    --bg-color-2: #fff;
+    --text-color: #53575A;
+    --accent-color: #007BDF;
+    --font: 'Open Sans', sans-serif;
+}
+
+*,*::before, *::after{
+    box-sizing: border-box;
+}
+
+body{
+    display: grid;
+    min-height: calc(100vh - 2rem);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 4rem 1fr 4rem;
+    grid-gap: 1rem;
+    margin: 1rem;
+
+    font-family: var(--font)
+}
+
+img{
+    max-width: 100%;
+}
+
+.header, footer{
+    grid-column: span 4;
+}
+.header,
+.sidebar,
+.main,
+.footer{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.menu{
+    list-style: none;
+    display: flex;
+}
+.menu a{
+    margin-left: 1rem;
+    text-decoration: none;
+}
+
+
+.main{
+    grid-column: span 3;
+}
+.header,
+.footer{
+    display: flex;
+    align-items: center;
+}
+.nav{
+    margin-left: auto;
+}
+
+.footer{
+    justify-content: center;
+}
+.hero{
+    position: relative;
+    margin-bottom:  2rem;
+}
+
+.hero::before{
+    content: '';
+    position: absolute;  
+}
+
+/*Theme*/
+
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+a{
+    color: var(--accent-color);
+}
+
+.header,
+.sidebar,
+.footer{
+background: var(--bg-color-2);
+}
+
+.hero::before{
+    background: var(--accent-color);
+}
+
+.hero h1{
+    color: var(--bg-color-2);
+}

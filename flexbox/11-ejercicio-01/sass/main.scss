@@ -1,0 +1,60 @@
+@import "reset";
+
+body {
+    background-color: grey;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    width: 600px;
+    background-color: lightgray;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header {
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 25px;
+    flex: 1 1 100%;
+}
+
+article {
+    background-color: lightblue;
+    padding: 20px;
+
+    // Se recomienda forzar el ancho con width aunque le tengamos en el flex basis
+    width: 70%;
+    flex: 1 1 70%;
+
+
+    // Cuando llegue a esta media el article que tenga el 100% del ancho
+    @media (max-width: 400px) {
+       flex-basis: 100%; 
+    }
+}
+
+aside {
+    background-color: darkblue;
+    padding: 10px;
+
+    // Se recomienda forzar el ancho con width aunque le tengamos en el flex basis
+    width: 30%;
+    flex: 1 1 30%;
+
+    ul {
+        color: white;
+        padding: 10px;
+        margin: 10px;
+        cursor: pointer;
+
+        li {
+            padding: 5px;
+        }
+    }
+}

@@ -1,0 +1,53 @@
+main {
+    display: grid;
+    font-family: sans-serif;
+    height: 97vh;
+    grid-gap: 10px;
+    font-size: 3vw;
+    
+
+    // Especificar posicion de las area (PASO 2)
+    grid-template-areas: 
+    "header"
+    "contenido"
+    "izquierda"
+    "derecha"
+    "footer";
+
+// Responsiva
+    @media (min-width: 500px) {
+        grid-template-areas: 
+        "header header derecha"
+        "izquierda contenido derecha"
+        "footer footer derecha";
+
+        //Tamaños de las columnas filas
+        grid-template-columns: 1fr 3fr 1fr;
+        grid-template-rows: 0.5fr 4fr 0.5fr;
+    }
+}
+
+main > * {
+    background: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// Nombramos las areas (PASO 1)
+header{
+    grid-area: header;
+}
+aside:first-of-type{
+    grid-area: izquierda;
+}
+article{
+    grid-area: contenido;
+}
+aside:last-of-type{
+    grid-area: derecha;
+}
+
+footer{
+    grid-area: footer;
+}

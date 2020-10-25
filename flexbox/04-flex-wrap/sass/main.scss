@@ -1,0 +1,38 @@
+@import "varios";
+
+.contenedor {
+    display: flex;
+    flex-direction: row;
+
+    // Con wrap hacemos que los elementos si no entran por tamaño los distribuye
+
+    //Media que hace que el elemento tome el  tamaño visible de la pantalla
+    
+    flex-wrap: wrap;
+
+    // flex-wrap: nowrap; //Por defecto
+    // flex-wrap: wrap-reverse;
+
+    height: 100vh;
+    border: 20px solid #4A86E8;
+
+    // Todos los elemento que empiezan por clase item-
+    div[class*="item-"] {
+        // Conseguimos que los elemento ocupen todo el espacio disponible, aunque tenga 300px
+        flex-grow: 1;
+        width: 300px;
+        height: 100px;
+
+
+        background: orange;
+        padding: 10px;
+        text-align: center;
+        border: 2px solid grey;
+    }
+
+    // Todos los elemento que empiezan por clase item- que sean impares \
+    div[class*="item-"]:nth-child(odd) {
+        background: black;
+        color: white;
+    }
+}

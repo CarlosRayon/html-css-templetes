@@ -1,0 +1,32 @@
+main {
+    height: 97vh;
+    display: grid;
+    grid-gap: 10px;
+
+    //  grid-template-columns: repeat(8, 1fr);
+
+    // 8 Columnas con un min y un máximo
+
+     grid-template-columns: repeat(8, minmax(30px, 150px));
+
+    // 8 Columnas con un patrón de dos (30px y mínimo 10% y máximo flexible )
+
+    // grid-template-columns: repeat(4, 30px minmax(10%, 1fr));
+
+    // 8 columnas con mínimo marcado por el contenido y max de 30%
+    // grid-template-columns: repeat(8, minmax(min-content, 30%));
+
+    // 8 columnas con máximo y mínimo marcado por contenido
+    // grid-template-columns: repeat(8, minmax(min-content, max-content));
+
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightcoral;
+    color: white;
+    // font-size: 2rem;
+    // word-break: break-all;
+}

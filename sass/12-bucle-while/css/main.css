@@ -1,0 +1,81 @@
+.caja-1 {
+    width: 100px;
+    height: 30px;
+    border: 1 solid black;
+    background-color: #edcdcd;
+    margin: 10px;
+}
+
+.caja-2 {
+    width: 200px;
+    height: 30px;
+    border: 2 solid black;
+    background-color: #ebcaca;
+    margin: 10px;
+}
+
+.caja-3 {
+    width: 300px;
+    height: 30px;
+    border: 3 solid black;
+    background-color: #eac6c6;
+    margin: 10px;
+}
+
+.caja-4 {
+    width: 400px;
+    height: 30px;
+    border: 4 solid black;
+    background-color: #e8c2c2;
+    margin: 10px;
+}
+
+.caja-5 {
+    width: 500px;
+    height: 30px;
+    border: 5 solid black;
+    background-color: #e7bebe;
+    margin: 10px;
+}
+
+.caja-6 {
+    width: 600px;
+    height: 30px;
+    border: 6 solid black;
+    background-color: #e6bbbb;
+    margin: 10px;
+}
+
+.caja-7 {
+    width: 700px;
+    height: 30px;
+    border: 7 solid black;
+    background-color: #e4b7b7;
+    margin: 10px;
+}
+
+.caja-8 {
+    width: 800px;
+    height: 30px;
+    border: 8 solid black;
+    background-color: #e3b3b3;
+    margin: 10px;
+}
+
+.caja-9 {
+    width: 900px;
+    height: 30px;
+    border: 9 solid black;
+    background-color: #e2afaf;
+    margin: 10px;
+}
+
+.caja-10 {
+    width: 1000px;
+    height: 30px;
+    border: 10 solid black;
+    background-color: #e0acac;
+    margin: 10px;
+}
+
+/*# sourceMappingURL=main.css.map */

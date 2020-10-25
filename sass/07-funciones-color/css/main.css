@@ -1,0 +1,26 @@
+.class-uno, .class-dos, .class-tres, .class-cuatro, .class-cinco {
+  margin: 10px auto;
+  width: 200px;
+  height: 200px;
+  font-size: 24px; }
+
+.class-uno {
+  background-color: #bb4466;
+  color: #009952; }
+
+.class-dos {
+  background-color: #770000;
+  color: #00cc6d; }
+
+.class-tres {
+  background-color: white;
+  color: #006636; }
+
+.class-cuatro {
+  background-color: #050001;
+  color: #ff66ad; }
+
+.class-cinco {
+  background-color: #119988; }
+
+/*# sourceMappingURL=main.css.map */

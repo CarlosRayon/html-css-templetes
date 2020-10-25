@@ -1,0 +1,16 @@
+main {
+  height: 97vh;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(8, minmax(30px, 150px));
+}
+
+div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lightcoral;
+  color: white;
+}
+
+/*# sourceMappingURL=main.css.map */

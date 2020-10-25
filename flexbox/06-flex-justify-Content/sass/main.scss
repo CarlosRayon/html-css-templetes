@@ -1,0 +1,35 @@
+html {
+    box-sizing: border-box;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: row;
+
+    // Justify content controla el alindamientos en el main axis (Cambiar orden para probar, alt + flecha dirección)
+    justify-content: space-around;
+    justify-content: flex-end;
+    justify-content: space-evenly;
+    justify-content: space-between;
+    justify-content: flex-start; //Por defecto
+
+    border: 3px solid grey;
+    background-color: rgb(134, 208, 233);
+    width: 90%;
+    height: 95vh;
+    margin: 10px auto;
+}
+
+div[class*="item-"] {
+    padding: 5px;
+    border: 2px solid gray;
+    background-color: yellow;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+div[class*="item-"]:nth-child(odd) {
+    background-color: blue;
+    color: white;
+}

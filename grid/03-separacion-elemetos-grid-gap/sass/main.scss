@@ -1,0 +1,24 @@
+main {
+    height: 97vh;
+    display: grid;
+    margin: 10px auto;
+
+    // grid-row-gap: 10px;
+    // grid-column-gap: 10px;
+
+    grid-gap: 10px; // forma acortada
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+
+    // Implicit grig
+
+    grid-auto-rows: 1fr;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(39, 174, 219);
+    color: white;
+}

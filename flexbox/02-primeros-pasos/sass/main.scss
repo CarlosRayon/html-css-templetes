@@ -1,0 +1,28 @@
+@import "varios";
+
+.contenedor {
+    display: flex;
+
+    // display: inline-flex;
+
+    border: 20px solid #4A86E8;
+
+    // Todos los elemento que empiezan por clase item-
+    div[class*="item-"] {
+        flex: 1;
+        background: orange;
+        padding: 10px;
+        text-align: center;
+        border: 2px solid grey;
+    }
+
+    div[class*="item-"]:nth-child(2) {
+        flex: 2.5;
+    }
+
+    // Todos los elemento que empiezan por clase item- que sean impares \
+    div[class*="item-"]:nth-child(odd) {
+        background: black;
+        color: white;
+    }
+}

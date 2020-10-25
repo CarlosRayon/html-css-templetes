@@ -1,0 +1,29 @@
+main {
+  display: grid;
+  height: 97vh;
+  grid-gap: 10px;
+  grid-template-columns: [col-sidebar-start] 1fr [col-sidebar-end col-contenido-start] 2fr [col-contenido-end];
+  grid-template-rows: [row-header-start] 1fr [row-header-end row-contenido-start] 2fr [row-contenido-end row-footer-start] 1fr [row-footer-end];
+}
+
+main > * {
+  font-family: sans-serif;
+  background: lightblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  grid-column: col-sidebar-start / col-contenido-end;
+}
+
+aside {
+  grid-row: row-header-end / row-footer-end;
+}
+
+footer {
+  grid-column: col-contenido-start / col-contenido-end;
+}
+
+/*# sourceMappingURL=main.css.map */

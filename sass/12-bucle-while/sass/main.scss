@@ -1,0 +1,13 @@
+$var: 1;
+
+@while $var <= 10 {
+    .caja-#{$var} {
+        width: 100px * $var;
+        height: 30px;
+        border: $var solid black;
+        background-color: darken(rgb(238, 209, 209), $var);
+        margin: 10px;
+    }
+
+    $var: $var + 1;
+}

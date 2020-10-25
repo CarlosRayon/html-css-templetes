@@ -1,0 +1,44 @@
+html {
+  box-sizing: border-box;
+}
+
+main > * {
+  background-color: lightgreen;
+  padding: 10px;
+  font-size: 3em;
+  text-align: center;
+}
+
+main {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-areas: "header" "izquierda" "contenido" "derecha" "footer";
+}
+@media (min-width: 500px) {
+  main {
+    grid-template-areas: "izquierda header header" "izquierda contenido derecha" "izquierda contenido footer ";
+  }
+}
+
+header {
+  grid-area: header;
+}
+
+aside:first-of-type {
+  grid-area: izquierda;
+  height: 95vh;
+}
+
+article {
+  grid-area: contenido;
+}
+
+aside:last-of-type {
+  grid-area: derecha;
+}
+
+footer {
+  grid-area: footer;
+}
+
+/*# sourceMappingURL=main.css.map */

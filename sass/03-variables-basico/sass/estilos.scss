@@ -1,0 +1,42 @@
+//Colores \
+$colorUno: rgb(245, 180, 127);
+$colorDos: #81a0c9;
+$colorTres: #6b8fbd;
+$colorCuatro: white;
+
+// Tamaños \ 
+$pequeño: 30%;
+$mediano: 60%;
+$grande: 90%;
+$full: 100%;
+
+// String \
+$auto: auto; 
+$centro: center;
+
+section {
+    margin: 10px auto;
+
+    width: $grande;
+    background: $colorUno;
+
+    h1 {
+        background: $colorDos;
+        text-align: $centro;
+    }
+
+    h2 {
+        background: $colorCuatro;
+    }
+
+    p {
+        background: $colorTres;
+    }
+}
+
+footer {
+    margin: 10px $auto;
+    // Operaciones matematicas ( * / + - )\ 
+    width: $full / 2;
+    background: $colorUno;
+}

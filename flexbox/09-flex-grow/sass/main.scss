@@ -1,0 +1,39 @@
+.container {
+    width: 90%;
+    height: 95vh;
+    margin: 10px auto;
+    border: 2px solid blue;
+    display: flex;
+    flex-direction: row;
+ 
+   
+
+}
+
+div[class*="item"] {
+    // width: 100px;
+    // height: 100px;
+    border: 1px solid gray;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 2em;
+}
+
+.item:nth-child(2n - 1) { // impares
+    background: lightblue;
+
+    // flex-grow define el espacio sobrante que cojera el elemento. El espacio se repartirá entre los elementos que tenga el flex-grow definido 
+    flex-grow: 0; //Por defecto
+    flex-grow: 2;
+}
+
+.item:nth-child(2n) { // pares
+    background: lightcoral;
+    flex-grow: 1;
+}
+.item:nth-child(4) { // pares
+    background: green;
+    color: white;
+    letter-spacing: 5px;
+    flex-grow: 3;
+}

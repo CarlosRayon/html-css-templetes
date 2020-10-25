@@ -1,0 +1,41 @@
+main {
+    height: 100vh;
+    display: grid;
+    grid-gap: 20px;
+
+    // Definimos directamente filas y columnas
+    grid-template-columns: 100px 100px 100px 100px;
+
+    // grid-template-columns: repeat(4, 100px);
+
+    grid-template-rows: 100px 100px 100px;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgreen;
+}
+
+@media (max-width: 600px) {
+    div:nth-child(10) {
+        background: purple;
+        grid-column-start: 3;
+        grid-column-end: 5;
+
+        // Acortado
+        // grid-column: 2 / 5;
+   
+    }
+
+    div:nth-child(6) {
+        background: purple;
+        grid-column: 2 / 3;
+        grid-row: 2 /4;
+
+        // grid-row-start: 2;
+        // grid-row-end: 4;
+   
+    }
+}

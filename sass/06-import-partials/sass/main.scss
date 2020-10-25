@@ -1,0 +1,21 @@
+
+// ----------------------------- \
+// ¡¡¡CUIDADO CON EL ORDEN DE IMPORTAR. PRIMERO LOS ELEMENTOS QUE USEMOS EN LOS OTROS ARCHIVOS \
+// ----------------------------- \
+
+//Importamos el archivo con las variables, de esta manera las podemos usar en este archivo
+@import "variables";
+
+// Importamos los archivos _reset y _header. Se trascompilaran en el css final \
+@import "reset";
+@import "header";
+
+
+section{
+    height: 200px;
+    background: $colorTres;
+}
+footer{
+    height: 200px;
+    background: $colorCuatro;
+}

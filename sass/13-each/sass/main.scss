@@ -1,0 +1,40 @@
+// Variable \
+$ruta: "../img";
+
+// ----------------------------- \
+// Uso de directiva each \
+// Cada valor del in lo guarda en la variable $var
+// ----------------------------- \
+
+@each $var in facebook, twitter, likendin, instagram {
+    li.#{$var} {
+        background: url(#{$ruta}/#{$var}.png);
+    }
+}
+
+
+
+
+
+
+.redes {
+    width: 50%;
+    height: 300px;
+    margin: 40px auto;
+    font-size: 1.5em;
+
+    a {
+        display: table;
+        color: blue;
+    }
+
+    li {
+        height: 200px;
+        width: 200px;
+
+        &:hover {
+            opacity: .5;
+        }
+    }
+}
+

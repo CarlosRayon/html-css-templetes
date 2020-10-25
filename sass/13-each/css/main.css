@@ -1,0 +1,35 @@
+li.facebook {
+  background: url(../img/facebook.png);
+}
+
+li.twitter {
+  background: url(../img/twitter.png);
+}
+
+li.likendin {
+  background: url(../img/likendin.png);
+}
+
+li.instagram {
+  background: url(../img/instagram.png);
+}
+
+.redes {
+  width: 50%;
+  height: 300px;
+  margin: 40px auto;
+  font-size: 1.5em;
+}
+.redes a {
+  display: table;
+  color: blue;
+}
+.redes li {
+  height: 200px;
+  width: 200px;
+}
+.redes li:hover {
+  opacity: .5;
+}
+
+/*# sourceMappingURL=main.css.map */

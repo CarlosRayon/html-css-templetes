@@ -1,0 +1,36 @@
+section {
+    display: grid;
+    grid-gap: 10px;
+    margin: 20px 0;
+    background: lightgreen;
+}
+div{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 50px;
+    text-align: center;
+}
+
+.auto-fill div{
+    background: lightcoral;
+}
+
+.auto-fit div{
+    background-color: purple;
+    color: white;
+}
+
+.auto-fill{
+    //Con esto añadimos 4 elementos
+    // grid-template-columns: repeat(4,minmax(100px,1fr));
+
+// Con esto conseguimos que añada tanto elementos como entren el el wiev(mirar con el inspector)
+    grid-template-columns: repeat(auto-fill,minmax(100px,1fr));
+
+}
+
+.auto-fit{
+    //Con fit si los track no se usan se eliminan los tracks
+    grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
+}

@@ -1,0 +1,24 @@
+// ----------------------------- \
+// Uso de bucle for \
+// ----------------------------- \
+
+// Con to llega llega hasta uno menos (hasta 4) \
+@for $i from 1 to 5 {
+	.caja-#{$i} {
+		width: 10% * $i;
+		height: 10px * $i;
+		background: red;
+		margin: 20px auto;
+	}
+}
+
+//Con through llega hasta el numero exacto (hasta 10)
+
+@for $z from 1 through 10 {
+	.box:nth-child(#{$z}) {
+		width: 5% * $z;
+		height: 10px * $z;
+		background: darken(red, $z * 2);
+		margin: 20px auto;
+	}
+}

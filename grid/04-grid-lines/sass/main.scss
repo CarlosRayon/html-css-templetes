@@ -1,0 +1,38 @@
+main {
+    display: grid;
+    height: 97vh;
+    grid-gap: 10px;
+
+    // grid-template-columns: 1fr 2fr;
+
+    //Creamos las columnas dándoles nombres
+    grid-template-columns: [col-sidebar-start] 1fr [col-sidebar-end col-contenido-start] 2fr [col-contenido-end];
+    grid-template-rows: [row-header-start] 1fr [ row-header-end row-contenido-start] 2fr [row-contenido-end row-footer-start] 1fr [row-footer-end];
+}
+
+main > * {
+    font-family: sans-serif;
+    background: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// header {
+//     grid-column: sidebar-start /span 2;
+// }
+// footer{
+//     grid-column: sidebar-start / -1;
+// }
+
+header {
+    grid-column: col-sidebar-start / col-contenido-end;
+}
+
+aside {
+    grid-row: row-header-end / row-footer-end;
+}
+
+footer {
+    grid-column: col-contenido-start / col-contenido-end;
+}

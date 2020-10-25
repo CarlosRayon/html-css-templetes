@@ -1,0 +1,45 @@
+// ----------------------------- \
+// Podriamos crear variables \
+// ----------------------------- \
+$smartphone: 480px;
+
+// ----------------------------- \
+// Usando un mixin \
+// ----------------------------- \
+@mixin tablets {
+    @media (min-width: 480px) and (max-width: 720px) {
+        @content;
+    }
+}
+
+
+// ----------------------------- \
+// Podemos interpolar variables  \
+// ----------------------------- \
+$desktop: "(mix-width: 1020px)";
+
+
+// ----------------------------- \
+// Podemos anidar las media query dentro de los elementos \
+// Podríamos crear partials de las medias he importarlas 
+// ----------------------------- \
+.container {
+    font-size: 16px;
+    color: black;
+
+    @media (max-width: $smartphone) {
+        font-size: 22px;
+        color: red;
+    }
+
+    @include tablets {
+        font-size: 18px;
+        color: green;
+    }
+
+    // Uso de interpolar variables \
+    @media #{$desktop} {
+        font-size: 20px;
+        color: yellow;
+    }
+}
